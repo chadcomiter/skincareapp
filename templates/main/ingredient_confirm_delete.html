@@ -1,0 +1,10 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+<form method="post">{% csrf_token %} 
+    <p>Are you sure you want to delete "{{ object }}"? Please note that this CANNOT be undone.</p> 
+    <input type="submit" value="Confirm"> 
+</form> 
+
+{% endblock %}

@@ -1,0 +1,40 @@
+body {
+    background-color: #475B63;
+}
+
+.navbar {
+    background-color: #2E2C2F;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+}
+
+.card {
+    background-color: #729B79;
+    color: #2E2C2F;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 4%;
+    padding: 10px;
+    width: 25%;
+}
+
+.ingredient-list {
+    width: 50%;
+    margin: auto;
+    
+}
+
+.delete-ingredient {
+    color:#475B63
+}
+.ingredient-product-name {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.list-group-item {
+    background-color: #729B79;
+    text-align: center;
+    padding: 10px;
+}

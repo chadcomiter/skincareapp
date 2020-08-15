@@ -1,0 +1,16 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+<div class="ingredient-list">
+    <h1 class="ingredient-product-name">{{product.name}}</h1>
+
+    {% for i in product.ingredients.all %}
+        <ul class="list-group">
+            <li class="list-group-item">{{i.name}}</li>
+            <li class="list-group-item"><a href="{% url 'ingredient_delete' i.id %}" class="delete-ingredient">Delete {{i.name}}</a></li>
+        </ul>
+    {% endfor %}
+</div>
+
+{% endblock %}

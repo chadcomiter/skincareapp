@@ -1,0 +1,24 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+    <div class="ingredient-list">
+        <h1 class="ingredient-product-name">Here is a list of ingredients exclusive to your breakout products.</h1>
+    
+        {% for i in danger_products %}
+            <ul class="list-group">
+                <li class="list-group-item">{{i}}</li>
+            </ul>
+        {% endfor %}
+    </div>
+
+    <div class="ingredient-list">
+        <h1 class="ingredient-product-name">Here is a list of the most common ingredients in your breakout products and their ratio of occurence to total ingredients in breakout products.</h1>
+    
+        {% for i in descending_breakout %}
+            <ul class="list-group">
+                <li class="list-group-item">{{i}}</li>
+            </ul>
+        {% endfor %}
+    </div>
+
+{% endblock %}

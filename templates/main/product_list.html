@@ -1,0 +1,22 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+<div class="main">
+    {% for p in products %}
+    <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">{{p.name}}</h3>
+      <p class="card-text">Caused Breakout: {{p.breakout}}</p>
+      <a href="{% url 'product_detail' p.id %}" class="btn btn-outline-dark btn-block">View Ingredients</a><br>
+      <a href="{% url 'product_update' p.id %}" class="btn btn-outline-dark btn-block">Edit Product</a><br>
+      <a href="{% url 'product_delete' p.id %}" class="btn btn-outline-dark btn-block">Delete Product</a><br>
+    </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}s
